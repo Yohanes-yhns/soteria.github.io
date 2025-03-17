@@ -1,0 +1,520 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    overflow-x: hidden;
+}
+.mobile-content {
+    display:block;
+}
+.desktop-content {
+    display: none;
+}
+.container {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.logo-img {
+    height:50px;
+}
+.tagline {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    width:95%;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.icon-link-keranjang {
+    text-decoration: none;
+    color: #333;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    width: 98%;
+}
+
+.product-card1 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card2 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card3 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card4 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card5 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card6 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card7 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card8 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card9 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card10 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card11 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card12 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card13 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card14 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card15 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+
+.product-image {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-name {
+    font-size: 17px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+/* === Styling untuk Popup === */
+.popup {
+    display: none; /* Default tersembunyi */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Efek transparan */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* === Konten Popup === */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* === Tombol Close (X) === */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #d9534f;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* === Gambar Produk di Popup === */
+#popup-image,
+#form-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* === Nama Produk === */
+#popup-name,
+#form-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#popup-price,
+#form-price {
+    font-size: 16px;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* === Input Fields === */
+.popup-content input,
+.popup-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* === Tombol Konfirmasi & Pesan Sekarang === */
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* === Animasi Muncul Popup === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+    margin-top: 30px;
+}
+.mediasosial {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.footer .mediasosial img {
+    width: 30px;
+}
+.footer h1 {
+    font-size: 8px;
+    color: #333;
+    font-weight: 500;
+}
+@media screen and (min-width: 320px) {
+.tagline {
+    font-size: 10px;
+}
+.user-info {
+    width: 95%;
+}
+.profile-pic {
+    width: 30px;
+    height: 30px;
+}
+.username {
+    font-size: 15px;
+}
+.icon-link-keranjang .material-icons {
+    font-size: 20px;
+}
+}
+@media screen and (min-width: 712px) {
+    .products {
+        width: 95%;
+    }
+    .product-card1 {
+        width: 20%;
+    }
+    .product-card2 {
+        width: 20%;
+    }
+    .product-card3 {
+        width: 20%;
+    }
+    .product-card4 {
+        width: 20%;
+    }
+    .product-card5 {
+        width: 20%;
+    }
+    .product-card6 {
+        width: 20%;
+    }
+    .product-card7 {
+        width: 20%;
+    }
+    .product-card8 {
+        width: 20%;
+    }
+    .product-card9 {
+        width: 20%;
+    }
+    .product-card10 {
+        width: 20%;
+    }
+    .product-card11 {
+        width: 20%;
+    }
+    .product-card12 {
+        width: 20%;
+    }
+    .product-card13 {
+        width: 20%;
+    }
+    .product-card14 {
+        width: 20%;
+    }
+    .product-card15 {
+        width: 20%;
+    }
+    .product-image {
+        width: 100%;
+    }
+    .product-name {
+        font-size: 20px;
+    }
+    .product-price {
+        font-size: 18px;
+    }
+    .footer {
+        height: 50px;
+    }
+    .footer h1 {
+        font-size: 12px;
+    }
+    .mediasosial {
+        gap: 20px;
+    }
+    .mediasosial img {
+        width: 20px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 16px;
+    }
+    .profile-pic {
+        width: 55px;
+        height: 55px;
+    }
+    .username {
+        font-size: 20px;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 25px;
+    }
+    .footer {
+        height: 70px;
+    }
+    .footer .mediasosial {
+        gap: 50px;
+    }
+    .footer .mediasosial img {
+        width: 40px;
+    }
+}

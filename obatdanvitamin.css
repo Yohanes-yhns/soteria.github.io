@@ -1,0 +1,463 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    overflow-x: hidden;
+}
+.mobile-content {
+    display:block;
+}
+.desktop-content {
+    display: none;
+}
+.container {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.logo-img {
+    height:50px;
+}
+.tagline {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    width:95%;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.icon-link-keranjang {
+    text-decoration: none;
+    color: #333;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    width: 98%;
+}
+
+.product-card1 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card2 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card3 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card4 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card5 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card6 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card7 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card8 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card9 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card10 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card11 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card12 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card13 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card14 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+.product-card15 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+}
+
+.product-image {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-name {
+    font-size: 17px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+/* Style untuk popup */
+.popup {
+    display: none;
+    position: fixed; 
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
+
+.popup img {
+    width: 150px;
+    height: auto;
+}
+.popup .popup-content p {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.close-btn {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.close-btn:hover {
+    color: #333;
+}
+#confirm-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+    margin-top: 30px;
+}
+.mediasosial {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.footer .mediasosial img {
+    width: 30px;
+}
+.footer h1 {
+    font-size: 8px;
+    color: #333;
+    font-weight: 500;
+}
+@media screen and (min-width: 320px) {
+.tagline {
+    font-size: 10px;
+}
+.user-info {
+    width: 95%;
+}
+.profile-pic {
+    width: 30px;
+    height: 30px;
+}
+.username {
+    font-size: 15px;
+}
+.icon-link-keranjang .material-icons {
+    font-size: 20px;
+}
+}
+@media screen and (min-width: 712px) {
+    .products {
+        width: 95%;
+    }
+    .product-card1 {
+        width: 20%;
+    }
+    .product-card2 {
+        width: 20%;
+    }
+    .product-card3 {
+        width: 20%;
+    }
+    .product-card4 {
+        width: 20%;
+    }
+    .product-card5 {
+        width: 20%;
+    }
+    .product-card6 {
+        width: 20%;
+    }
+    .product-card7 {
+        width: 20%;
+    }
+    .product-card8 {
+        width: 20%;
+    }
+    .product-card9 {
+        width: 20%;
+    }
+    .product-card10 {
+        width: 20%;
+    }
+    .product-card11 {
+        width: 20%;
+    }
+    .product-card12 {
+        width: 20%;
+    }
+    .product-card13 {
+        width: 20%;
+    }
+    .product-card14 {
+        width: 20%;
+    }
+    .product-card15 {
+        width: 20%;
+    }
+    .product-image {
+        width: 100%;
+    }
+    .product-name {
+        font-size: 20px;
+    }
+    .product-price {
+        font-size: 18px;
+    }
+    .footer {
+        height: 50px;
+    }
+    .footer h1 {
+        font-size: 12px;
+    }
+    .mediasosial {
+        gap: 20px;
+    }
+    .mediasosial img {
+        width: 20px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 16px;
+    }
+    .profile-pic {
+        width: 55px;
+        height: 55px;
+    }
+    .username {
+        font-size: 20px;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 25px;
+    }
+    .footer {
+        height: 70px;
+    }
+    .footer .mediasosial {
+        gap: 50px;
+    }
+    .footer .mediasosial img {
+        width: 40px;
+    }
+}

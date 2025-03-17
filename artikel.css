@@ -1,0 +1,1114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    overflow-x: hidden;
+}
+.mobile-content {
+    display:block;
+}
+.desktop-content {
+    display: block;
+}
+.container {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.logo-img {
+    height:50px;
+}
+.tagline {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    width:98%;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.icon-link-keranjang {
+    text-decoration: none;
+    color: #333;
+}
+.input {
+    border: 1px solid #333 ;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+    align-self: start;
+    margin-left: 5px;
+}
+  
+.input:hover,
+.input:focus {
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+}
+.artikel1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel1 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel1 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel1 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel1 .juduldanlink .link:hover {
+    color:#5e5e5e;
+}
+.artikelimg {
+    width: 100px;
+    border-radius: 10px;
+}
+.artikel2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel2 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel2 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel2 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel2 .juduldanlink .link:hover {
+    color:#5e5e5e;
+}
+.artikel3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel3 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel3 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel3 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel3 .juduldanlink .link:hover {
+    color:#5e5e5e;
+}
+.artikel4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel4 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel4 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel4 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel4 .juduldanlink .link:hover {
+    color:#5e5e5e;
+}
+.artikel5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel5 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel5 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel5 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel5 .juduldanlink .link:hover {
+    color:#5e5e5e;
+}
+.artikel6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel6 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel6 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel6 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel6 .juduldanlink .link:hover {
+    color:#5e5e5e;
+}
+.artikel7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel7 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel7 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel7 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel8 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel8 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel8 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel8 .juduldanlink .link:hover {
+    color:#5e5e5e;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+.icon-link-kiri .material-icons {
+    font-size: 30px;
+    color: #333;
+}
+.icon-link-kanan .material-icons {
+    font-size: 30px;
+    color: #333;
+}
+.pages1 {
+    text-decoration: none;
+    color: #333;
+}
+.pages2 {
+    text-decoration: none;
+    color: #333;
+}
+.pages3 {
+    text-decoration: none;
+    color: #333;
+}
+.pages4 {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+    margin-top: 10px;
+}
+.mediasosial {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.footer .mediasosial img {
+    width: 30px;
+}
+.footer h1 {
+    font-size: 8px;
+    color: #333;
+    font-weight: 500;
+}
+@media (min-width: 320px) and (max-width: 389px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display:block;
+    }
+    .tagline {
+        font-size: 10px;
+    }
+    .user-info {
+        width: 95%;
+    }
+    .profile-pic {
+        width: 30px;
+        height: 30px;
+    }
+    .username {
+        font-size: 12px;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 20px;
+    }
+    .input {
+        width: 10em;
+        height: 2em;
+        padding-left: 0.5em;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .artikelimg {
+        width: auto;
+        height: 50px;
+        align-self: center;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .artikel4 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel4 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .artikel5 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel5 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .artikel6 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel6 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .artikel7 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel7 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .artikel8 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel8 .juduldanlink .link {
+        font-size: 8px;
+    }
+    .pages {
+        font-size: 15px;
+    }
+    .icon-link-kiri .material-icons {
+        font-size: 20px;
+    }   
+    .icon-link-kanan .material-icons {
+        font-size: 20px;
+    }
+}
+@media (min-width:390px) and (max-width:413px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display:block;
+    }
+}
+@media (min-width:414px) and (max-width:479px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display:block;
+    }
+}
+@media (min-width:480px) and (max-width:539px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display:block;
+    }
+}
+@media (min-width:540px) and (max-width:711px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display:block;
+    }
+}
+@media (min-width:712px) and (max-width:767px) {
+    .desktop-content {
+        display:none;
+    }
+    .mobile-content {
+        display:block;
+    }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    .desktop-content {
+        display:none;
+    }
+    .mobile-content {
+        display:block;
+    }
+}
+@media (min-width:1024px) and (max-width:1200px) {
+    .desktop-content {
+        display:block;
+    }
+    .mobile-content {
+        display:none;
+    }
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .profile-pic {
+        width: 55px;
+        height: 55px;
+    }
+    .input {
+        width: 20em;
+        height: 2.5em;
+        padding-left: 0.8em;
+    }
+    .artikel1 {
+        height: 150px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikelimg {
+        width: auto;
+        height: 150px;
+    }
+    .artikel2 {
+        height: 150px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel3 {
+        height: 150px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel4 {
+        height: 150px;
+    }
+    .artikel4 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel4 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel5 {
+        height: 150px;
+    }
+    .artikel5 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel5 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel6 {
+        height: 150px;
+    }
+    .artikel6 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel6 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel7 {
+        height: 150px;
+    }
+    .artikel7 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel7 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel8 {
+        height: 150px;
+    }
+    .artikel8 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel8 .juduldanlink .link {
+        font-size: 15px;
+    }
+}
+@media (min-width:1201px) and (max-width:1365px) {
+    .desktop-content {
+        display:block;
+    }
+    .mobile-content {
+        display:none;
+    }
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .profile-pic {
+        width: 55px;
+        height: 55px;
+    }
+    .input {
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+    }
+    .artikel1 {
+        height: 150px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikelimg {
+        width: auto;
+        height: 150px;
+    }
+    .artikel2 {
+        height: 150px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel3 {
+        height: 150px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel4 {
+        height: 150px;
+    }
+    .artikel4 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel4 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel5 {
+        height: 150px;
+    }
+    .artikel5 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel5 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel6 {
+        height: 150px;
+    }
+    .artikel6 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel6 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel7 {
+        height: 150px;
+    }
+    .artikel7 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel7 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel8 {
+        height: 150px;
+    }
+    .artikel8 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel8 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .footer {
+        height: 60px;
+    }
+    .mediasosial img {
+        width: 50px;
+    }
+    .footer h1 {
+        font-size: 15px;
+    }
+}
+@media (min-width:1366px) and (max-width:1439px) {
+    .desktop-content {
+        display:block;
+    }
+    .mobile-content {
+        display:none;
+    }
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .profile-pic {
+        width: 55px;
+        height: 55px;
+    }
+    .input {
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+    }
+    .artikel1 {
+        height: 150px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikelimg {
+        width: auto;
+        height: 150px;
+    }
+    .artikel2 {
+        height: 150px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel3 {
+        height: 150px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel4 {
+        height: 150px;
+    }
+    .artikel4 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel4 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel5 {
+        height: 150px;
+    }
+    .artikel5 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel5 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel6 {
+        height: 150px;
+    }
+    .artikel6 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel6 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel7 {
+        height: 150px;
+    }
+    .artikel7 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel7 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel8 {
+        height: 150px;
+    }
+    .artikel8 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel8 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .footer {
+        height: 60px;
+    }
+    .mediasosial img {
+        width: 50px;
+    }
+    .footer h1 {
+        font-size: 15px;
+    }
+}
+@media (min-width:1440px) and (max-width:1919px) {
+    .desktop-content {
+        display:block;
+    }
+    .mobile-content {
+        display:none;
+    }
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .profile-pic {
+        width: 55px;
+        height: 55px;
+    }
+    .input {
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+    }
+    .artikel1 {
+        height: 150px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikelimg {
+        width: auto;
+        height: 150px;
+    }
+    .artikel2 {
+        height: 150px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel3 {
+        height: 150px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel4 {
+        height: 150px;
+    }
+    .artikel4 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel4 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel5 {
+        height: 150px;
+    }
+    .artikel5 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel5 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel6 {
+        height: 150px;
+    }
+    .artikel6 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel6 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel7 {
+        height: 150px;
+    }
+    .artikel7 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel7 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel8 {
+        height: 150px;
+    }
+    .artikel8 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel8 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .footer {
+        height: 60px;
+    }
+    .mediasosial img {
+        width: 50px;
+    }
+    .footer h1 {
+        font-size: 15px;
+    }
+}
+@media (min-width:1920px) {
+    .desktop-content {
+        display:block;
+    }
+    .mobile-content {
+        display:none;
+    }
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .profile-pic {
+        width: 55px;
+        height: 55px;
+    }
+    .input {
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+    }
+    .artikel1 {
+        height: 150px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikelimg {
+        width: auto;
+        height: 150px;
+    }
+    .artikel2 {
+        height: 150px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel3 {
+        height: 150px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel4 {
+        height: 150px;
+    }
+    .artikel4 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel4 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel5 {
+        height: 150px;
+    }
+    .artikel5 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel5 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel6 {
+        height: 150px;
+    }
+    .artikel6 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel6 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel7 {
+        height: 150px;
+    }
+    .artikel7 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel7 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .artikel8 {
+        height: 150px;
+    }
+    .artikel8 .juduldanlink .judul {
+        font-size: 23px;
+        width: 500px;
+    }
+    .artikel8 .juduldanlink .link {
+        font-size: 17px;
+    }
+    .footer {
+        height: 60px;
+    }
+    .mediasosial img {
+        width: 50px;
+    }
+    .footer h1 {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,609 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    overflow-x: hidden;
+}
+.mobile-content {
+    display:block;
+}
+.desktop-content {
+    display: block;
+}
+.container {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.logo-img {
+    height:50px;
+}
+.tagline {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    width:98%;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.icon-link-keranjang {
+    text-decoration: none;
+    color: #333;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+.asuransi1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    width: 95%;
+    height:250px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+} 
+.asuransi1 .judul {
+    font-size: 15px;
+    color: #333;
+}
+.asuransi1 .link {
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+}
+.asuransiimg {
+    width: 250px;
+    border-radius: 10px;
+}
+.asuransi2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    width: 95%;
+    height:250px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+} 
+.asuransi2 .judul {
+    font-size: 15px;
+    color: #333;
+}
+.asuransi2 .link {
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+}
+.asuransi3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    width: 95%;
+    height:250px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.asuransi3 .judul {
+    font-size: 15px;
+    color: #333;
+}
+.asuransi3 .link {
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+    margin-top: 10px;
+}
+.mediasosial {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.footer .mediasosial img {
+    width: 30px;
+}
+.footer h1 {
+    font-size: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (min-width:712px) and (max-width:767px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .asuransi1 {
+        align-items: flex-start;
+        height: 300px;
+    }
+    .asuransi2 {
+        align-items: flex-start;
+        height: 300px;
+    }
+    .asuransi3 {
+        align-items: flex-start;
+        height: 300px;
+    }
+    .asuransi1 .judul {
+        font-size: 20px;
+    }
+    .asuransi2 .judul {
+        font-size: 20px;
+    }
+    .asuransi3 .judul {
+        font-size: 20px;
+    }
+    .asuransi1 .link {
+        font-size: 15px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi2 .link {
+        font-size: 15px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi3 .link {
+        font-size: 15px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransiimg {
+        width: 300px;
+    }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .asuransi1 {
+        align-items: flex-start;
+        height: 300px;
+    }
+    .asuransi2 {
+        align-items: flex-start;
+        height: 300px;
+    }
+    .asuransi3 {
+        align-items: flex-start;
+        height: 300px;
+    }
+    .asuransi1 .judul {
+        font-size: 20px;
+    }
+    .asuransi2 .judul {
+        font-size: 20px;
+    }
+    .asuransi3 .judul {
+        font-size: 20px;
+    }
+    .asuransi1 .link {
+        font-size: 15px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi2 .link {
+        font-size: 15px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi3 .link {
+        font-size: 15px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransiimg {
+        width: 300px;
+    }
+}
+@media (min-width:1024px) and (max-width:1200px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height: 70px;
+    }
+    .tagline {
+        font-size: 15px;
+    }
+    .asuransi1 {
+        align-items: flex-start;
+        height: 350px;
+    }
+    .asuransi2 {
+        align-items: flex-start;
+        height: 350px;
+    }
+    .asuransi3 {
+        align-items: flex-start;
+        height: 350px;
+    }
+    .asuransi1 .judul {
+        font-size: 25px;
+    }
+    .asuransi2 .judul {
+        font-size: 25px;
+    }
+    .asuransi3 .judul {
+        font-size: 25px;
+    }
+    .asuransi1 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi2 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi3 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransiimg {
+        width: 350px;
+    }
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+    .mediasosial {
+        gap: 50px;
+    }
+    .footer h1 {
+        font-size: 20px;
+    }
+}
+@media (min-width:1201px) and (max-width:1365px) {
+    .navbar {
+        height: 60px;
+    }
+    .logo-img {
+        height: 80px;
+    }
+    .tagline {
+        font-size: 17px;
+    }
+    .asuransi1 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi2 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi3 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi1 .judul {
+        font-size: 25px;
+    }
+    .asuransi2 .judul {
+        font-size: 25px;
+    }
+    .asuransi3 .judul {
+        font-size: 25px;
+    }
+    .asuransi1 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi2 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi3 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransiimg {
+        width: 350px;
+    }
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+    .mediasosial {
+        gap: 50px;
+    }
+    .footer h1 {
+        font-size: 20px;
+    }
+}
+@media (min-width:1366px) and (max-width:1439px) {
+    .navbar {
+        height: 60px;
+    }
+    .logo-img {
+        height: 80px;
+    }
+    .tagline {
+        font-size: 17px;
+    }
+    .asuransi1 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi2 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi3 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi1 .judul {
+        font-size: 25px;
+    }
+    .asuransi2 .judul {
+        font-size: 25px;
+    }
+    .asuransi3 .judul {
+        font-size: 25px;
+    }
+    .asuransi1 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi2 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi3 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransiimg {
+        width: 350px;
+    }
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+    .mediasosial {
+        gap: 50px;
+    }
+    .footer h1 {
+        font-size: 20px;
+    }
+}
+@media (min-width:1440px) and (max-width:1919px) {
+    .navbar {
+        height: 60px;
+    }
+    .logo-img {
+        height: 80px;
+    }
+    .tagline {
+        font-size: 17px;
+    }
+    .asuransi1 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi2 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi3 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi1 .judul {
+        font-size: 25px;
+    }
+    .asuransi2 .judul {
+        font-size: 25px;
+    }
+    .asuransi3 .judul {
+        font-size: 25px;
+    }
+    .asuransi1 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi2 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi3 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransiimg {
+        width: 400px;
+    }
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+    .mediasosial {
+        gap: 50px;
+    }
+    .footer h1 {
+        font-size: 20px;
+    }
+}
+@media (min-width:1920px) {
+    .navbar {
+        height: 60px;
+    }
+    .logo-img {
+        height: 80px;
+    }
+    .tagline {
+        font-size: 17px;
+    }
+    .asuransi1 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi2 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi3 {
+        align-items: flex-start;
+        height: 350px;
+        background: none;
+        box-shadow: none;
+    }
+    .asuransi1 .judul {
+        font-size: 25px;
+    }
+    .asuransi2 .judul {
+        font-size: 25px;
+    }
+    .asuransi3 .judul {
+        font-size: 25px;
+    }
+    .asuransi1 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi2 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransi3 .link {
+        font-size: 20px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .asuransiimg {
+        width: 500px;
+    }
+    .footer {
+        height: 70px;
+        width: 100vw;
+    }
+    .mediasosial {
+        gap: 50px;
+    }
+    .footer h1 {
+        font-size: 20px;
+    }
+}

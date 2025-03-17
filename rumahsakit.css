@@ -1,0 +1,1099 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    overflow-x: hidden;
+}
+.mobile-content {
+    display:block;
+}
+.desktop-content {
+    display: none;
+}
+.container {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.logo-img {
+    height:50px;
+}
+.tagline {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:90%;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.icon-link-keranjang {
+    margin-left: 190px;
+    color: #333;
+}
+.daftarRStext {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.input {
+    border: 1px solid #333 ;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+  
+.input:hover,
+.input:focus {
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+}
+.container1 {
+    width: 95%;
+    color: #333;
+    margin-top: 30px;
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    height: 400px;
+}
+.container1 h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.container1 img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.container2 {
+    width: 95%;
+    color: #333;
+    margin-top: 30px;
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    height: 400px;
+}
+.container2 h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.container2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.container3 {
+    width: 95%;
+    color: #333;
+    margin-top: 30px;
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    height: 400px;
+}
+.container3 h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.container3 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.container4 {
+    width: 95%;
+    color: #333;
+    margin-top: 30px;
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    height: 450px;
+    margin-bottom: 20px;
+}
+.container4 h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.container4 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.mediasosial {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.footer .mediasosial img {
+    width: 30px;
+}
+.footer h1 {
+    font-size: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (min-width:320px) and (max-width:389px) {
+    .navbar {
+        height: 20px;
+    }
+    .logo-img {
+        height:35px;
+    }
+    .tagline {
+        font-size: 10px;
+    }
+    .username {
+        font-size: 15px;
+    }
+    .icon-link-keranjang {
+        margin-left: 130px;
+        color: #333;
+    }
+    .icon-link-keranjang .material-icons{
+        font-size: 20px;
+    }
+}
+@media (min-width:390px) and (max-width:413px) {
+    .icon-link-keranjang {
+        margin-left: 170px;
+    }
+}
+@media (min-width:480px) and (max-width:539px) {
+    .icon-link-keranjang {
+        margin-left: 250px;
+    }
+}
+@media (min-width:540px) and (max-width:711px) {
+    .tagline {
+        font-size: 14px;
+    }
+    .icon-link-keranjang {
+        margin-left: 300px;
+    }
+}
+@media (min-width:712px) and (max-width:767px) {
+    .tagline {
+        font-size: 15px;
+    }
+    .icon-link-keranjang {
+        margin-left: 450px;
+    }
+}
+@media (min-width:768px) and (max-width:819px) {
+    .tagline {
+        font-size: 15px;
+    }
+    .icon-link-keranjang {
+        margin-left: 500px;
+    }
+    .input {
+        width: 25em;
+    }
+}
+@media (min-width:820px) and (max-width:1023px) {
+    .tagline {
+        font-size: 17px;
+    }
+    .icon-link-keranjang {
+        margin-left: 500px;
+    }
+    .input {
+        width: 25em;
+    }
+    .navbar {
+        height: 40px;
+    }
+}
+@media (min-width:1024px) and (max-width:1200px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .logo-img {
+        height: 50px;
+    }
+    .tagline {
+        margin-right: 5px;
+        font-size: 12px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 90%;
+    }
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 720px;
+        color: #333;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    .input {
+        border: 1px solid #333;
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    .input:hover,
+    .input:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 95%;
+        color: #333;
+        margin-top: 30px;
+        border: 1px solid #333;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container1 h1, .container2 h1, .container3 h1, .container4 h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .image-container .rsImages {
+        width: auto;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .mediasosial {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .footer .mediasosial img {
+        width: 30px;
+    }
+    .footer h1 {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1201px) and (max-width:1365px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .logo-img {
+        height: 50px;
+    }
+    .tagline {
+        margin-right: 5px;
+        font-size: 12px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 90%;
+    }
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 930px;
+        color: #333;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    .input {
+        border: 1px solid #333;
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    .input:hover,
+    .input:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 95%;
+        color: #333;
+        margin-top: 30px;
+        border: 1px solid #333;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container1 h1, .container2 h1, .container3 h1, .container4 h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .image-container .rsImages {
+        width: auto;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .mediasosial {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .footer .mediasosial img {
+        width: 30px;
+    }
+    .footer h1 {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1366px) and (max-width:1439px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .logo-img {
+        height: 50px;
+    }
+    .tagline {
+        margin-right: 5px;
+        font-size: 12px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 90%;
+    }
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 1030px;
+        color: #333;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    .input {
+        border: 1px solid #333;
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    .input:hover,
+    .input:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 95%;
+        color: #333;
+        margin-top: 30px;
+        border: 1px solid #333;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container1 h1, .container2 h1, .container3 h1, .container4 h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .image-container .rsImages {
+        width: auto;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .mediasosial {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .footer .mediasosial img {
+        width: 30px;
+    }
+    .footer h1 {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1440px) and (max-width:1919px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .logo-img {
+        height: 50px;
+    }
+    .tagline {
+        margin-right: 5px;
+        font-size: 12px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 90%;
+    }
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 1090px;
+        color: #333;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    .input {
+        border: 1px solid #333;
+        width: 25em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    .input:hover,
+    .input:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 95%;
+        color: #333;
+        margin-top: 30px;
+        border: 1px solid #333;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container1 h1, .container2 h1, .container3 h1, .container4 h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .image-container .rsImages {
+        width: auto;
+        height: 190px;
+        border-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        padding: 10px 50px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .mediasosial {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .footer .mediasosial img {
+        width: 30px;
+    }
+    .footer h1 {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1920px) and (max-width:2560px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .logo-img {
+        height: 50px;
+    }
+    .tagline {
+        margin-right: 5px;
+        font-size: 12px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 90%;
+    }
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 1490px;
+        color: #333;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 27px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    .input {
+        border: 1px solid #333;
+        width: 30em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    .input:hover,
+    .input:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 95%;
+        color: #333;
+        margin-top: 30px;
+        border: 1px solid #333;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        height: auto;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container1 h1, .container2 h1, .container3 h1, .container4 h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .image-container .rsImages {
+        width: auto;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        padding: 20px 70px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 30px;
+    }
+    .mediasosial {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .footer .mediasosial img {
+        width: 30px;
+    }
+    .footer h1 {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+    }
+}

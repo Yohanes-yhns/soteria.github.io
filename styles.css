@@ -1,0 +1,3499 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    overflow-x: hidden;
+}
+.mobile-content {
+    display:block;
+}
+.desktop-content {
+    display: none;
+}
+.container {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.logo-img {
+    height:50px;
+}
+.tagline {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:90%;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.icon-link-keranjang {
+    margin-left: 190px;
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.daftarrsimg {
+    height: auto;
+    width:90vw;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.daftarRStext {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    height:20px;
+}
+.hospital-section {
+    text-align: center;
+    padding:5px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 95%;
+}
+.hospital-logos {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    padding: 5px;
+}
+.hospital-logos .rs1 {
+    width: 50px;
+    height: 50px;
+}
+.hospital-logos .rs2 {
+    width: 80px;
+    height: 50px;
+}
+.hospital-logos .rs3 {
+    width: 80px;
+    height: 50px;
+}
+.icon-link-daftarrs {
+    color: #333;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+.icon-link-daftarrs:hover {
+    color: #5e5e5e;
+}
+.pertolongan-pertama {
+    display: flex;
+    flex-direction: row;
+    max-width: 95vw;
+    height: 90px;
+    align-items: center;
+    color: #333;
+}
+.pertolongan-pertama-24jam {
+    display: flex;
+    flex-direction:column;
+    width: 250px;
+}
+.pertolongan-pertama-24jam h1 {
+    font-size: 20px;
+}
+.pertolongan-pertama-24jam h2 {
+    font-size: 10px;
+    font-weight: 400;
+}
+.emergency-section {
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hotline-number {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+.products {
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    width: 90%;
+    height:250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.products h1 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+}
+.product-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.product1 {
+    background: #f9f9f9;
+    padding: 10px;
+    height:120px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product1 img {
+    height:auto;
+    width:70px;
+}
+.product1 p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.product2 {
+    background: #f9f9f9;
+    padding: 10px;
+    height:120px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product2 img {
+    height:auto;
+    width:70px;
+}
+.product2 p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.product3 {
+    background: #f9f9f9;
+    padding: 10px;
+    height:120px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product3 img {
+    height:auto;
+    width:70px;
+}
+.product3 p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.product4 {
+    background: #f9f9f9;
+    padding: 10px;
+    height:120px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product4 img {
+    height:auto;
+    width:70px;
+}
+.product4 p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.product5 {
+    background: #f9f9f9;
+    padding: 10px;
+    height:120px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product5 img {
+    height:auto;
+    width:70px;
+}
+.product5 p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.lihat-produk-alkes {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    font-weight: 700;
+}
+.lihat-produk-alkes:hover {
+    color: #5e5e5e;
+}
+.artikelkesehatantext {
+    text-align: left;
+    color: #333;
+    font-size: 25px;
+    font-weight: 700;
+    height:20px;
+    width:95%;
+    margin-top: 30px;
+}
+.artikel1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:80px;
+    width:95%;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel1 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel1 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel1 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel1 .juduldanlink .link:hover {
+    color: #5e5e5e;
+}
+.artikelimg {
+    width: 100px;
+    border-radius: 10px;
+}
+.artikel2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:80px;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel2 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel2 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel2 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel2 .juduldanlink .link:hover {
+    color: #5e5e5e;
+}
+.artikel3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height:80px;
+    width:95%;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.artikel3 .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.artikel3 .juduldanlink .judul {
+    font-size: 15px;
+    color: #333;
+}
+.artikel3 .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+}
+.artikel3 .juduldanlink .link:hover {
+    color: #5e5e5e;
+}
+.lihatartikel {
+    text-align: right;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    height:20px;
+    width:95%;
+    margin-top: 20px;
+}
+.lihatartikel:hover {
+    color: #5e5e5e;
+}
+.asuransikesehatan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height:100px;
+    align-items: center;
+    width:95%;
+    margin-top: 10px;
+}
+.asuransiimg {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.asuransikesehatan .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 10px;
+}
+.asuransikesehatan .juduldanlink .judul {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+.asuransikesehatan .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+}
+.asuransikesehatan .juduldanlink .link:hover {
+    color: #5e5e5e;
+}
+.layananbantuanbiaya {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height:100px;
+    align-items: center;
+    width:95%;
+    margin-top: 10px;
+}
+.layananbantuanbiayaimg {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.layananbantuanbiaya .juduldanlink {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 10px;
+}
+.layananbantuanbiaya .juduldanlink .judul {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+.layananbantuanbiaya .juduldanlink .link {
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+}
+.layananbantuanbiaya .juduldanlink .link:hover {
+    color: #5e5e5e;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    height: 30px;
+}
+.mediasosial {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.footer .mediasosial img {
+    width: 30px;
+}
+.footer h1 {
+    font-size: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (min-width: 320px) and (max-width: 389px) {
+    .navbar {
+        height: 25px;
+    }
+    .logo-img {
+        height:35px;
+    }
+    .tagline {
+        font-size: 10px;
+    }
+    .profile-pic {
+        width: 30px;
+        height: 30px;
+    }
+    .username {
+        font-size: 15px;
+    }
+    .icon-link-keranjang {
+        margin-left: 150px;
+        color: #333;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 18px;
+    }
+    .hospital-logos {
+        gap: 10px;
+    }
+    .icon-link-daftarrs {
+        color: #333;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 17px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 9px;
+    }
+    .products h1 {
+        font-size: 20px;
+    }
+    .product-slide {
+        gap: 5px;
+    }
+    .lihat-produk-alkes {
+        margin-top: 16px;
+    }
+    .artikelkesehatantext {
+        font-size: 21px;
+        margin-top: 25px;
+    }
+    .artikel1 .juduldanlink {
+        width: 180px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 10px;
+    }
+    .artikel2 .juduldanlink {
+        width: 180px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 10px;
+    }
+    .artikel3 .juduldanlink {
+        width: 180px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 10px;
+    }
+    .lihatartikel {
+        font-size: 12px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 10px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 12px;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 10px;
+    }
+}
+
+@media (min-width:390px) and (max-width:413px) {
+    .icon-link-keranjang {
+        margin-left: 170px;
+    }
+    .icon-link-daftarrs {
+        margin-left: 60px;
+    }
+}
+
+@media (min-width:430px) and (max-width:479px) {
+    .icon-link-keranjang {
+        margin-left: 200px;
+    }
+    .icon-link-daftarrs {
+        margin-left: 90px;
+    }
+}
+@media (min-width:480px) and (max-width:539px) {
+    .icon-link-keranjang {
+        margin-left: 250px;
+    }
+    .icon-link-daftarrs {
+        margin-left: 110px;
+    }
+    .hospital-logos .rs1 {
+        width: 60px;
+        height: 60px;
+    }
+    .hospital-logos .rs2 {
+        width: 90px;
+        height: 60px;
+    }
+    .hospital-logos .rs3 {
+        width: 90px;
+        height: 60px;
+    }
+    .emergency-section {
+        padding: 20px;
+        margin-left: 40px;
+    }
+    .hotline-number {
+        font-size: 20px;
+    }
+    .products {
+        padding: 20px;
+    }
+    .product-slide {
+        gap: 20px;
+    }
+    .products h1 {
+        font-size: 23px;
+    }
+    .lihat-produk-alkes {
+        font-size: 18px;
+    }
+}
+@media (min-width:540px) and (max-width:711px) {
+    .navbar {
+        height: 35px;
+    }
+    .tagline {
+        margin-right: 7px;
+        font-size: 14px;
+        color: #666;
+    }
+    .user-info {
+        width: 93%;
+    }
+    .username {
+        font-size: 20px;
+    }
+    .icon-link-keranjang {
+        margin-left: 300px;
+    }
+    .daftarRStext {
+        font-size: 25px;
+        height:25px;
+    }
+    .hospital-section {
+        padding:10px;
+    }
+    .hospital-logos {
+        padding: 15px;
+    }
+    .icon-link-daftarrs {
+        margin-left: 190px;
+    }
+    .pertolongan-pertama {
+        height: 110px;
+    }
+    .pertolongan-pertama-24jam {
+        width: 290px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 23px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 12px;
+    }
+    .emergency-section {
+        padding: 20px;
+        margin-left: 40px;
+    }
+    .hotline-number {
+        font-size: 20px;
+    }
+    .products {
+        padding: 15px;
+        height: 280px;
+    }
+    .products h1 {
+        font-size: 23px;
+    }
+    .product1 {
+        padding: 15px;
+        height:140px;
+    }
+    .product2 {
+        padding: 15px;
+        height:140px;
+    }
+    .product3 {
+        padding: 15px;
+        height:140px;
+    }
+    .product1 p {
+        margin-top: 30px;
+    }
+    .product2 p {
+        margin-top: 30px;
+    }
+    .product3 p {
+        margin-top: 30px;
+    }
+    .asuransikesehatan {
+        justify-content:flex-start;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 17px;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 14px;
+    }
+    .layananbantuanbiaya {
+        justify-content: flex-start;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 17px;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 14px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+    }
+}
+
+@media (min-width:712px) and (max-width:767px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height:70px;
+    }
+    .tagline {
+        margin-right: 10px;
+        font-size: 17px;
+        color: #666;
+    }
+    .user-info {
+        width: 95%;
+        background: none;
+        box-shadow:none;
+    }
+    .username {
+        font-size: 23px;
+    }
+    .icon-link-keranjang {
+        margin-left: 450px;
+    }
+    .daftarRStext {
+        font-size: 27px;
+        height:25px;
+    }
+    .hospital-section {
+        padding:10px;
+    }
+    .hospital-logos {
+        padding: 10px;
+    }
+    .icon-link-daftarrs {
+        margin-left: 220px;
+        margin-top: 25px;
+    }
+    .icon-link-daftarrs .material-icons {
+        font-size: 35px;
+    }
+    .hospital-logos .rs1 {
+        width: 80px;
+        height: 80px;
+    }
+    .hospital-logos .rs2 {
+        width: 130px;
+        height: 80px;
+    }
+    .hospital-logos .rs3 {
+        width: 130px;
+        height: 80px;
+    }
+    .pertolongan-pertama {
+        height: 120px;
+    }
+    .pertolongan-pertama-24jam {
+        width: 350px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 24px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 13px;
+    }
+    .emergency-section {
+        padding: 20px;
+        margin-left: 100px;
+    }
+    .hotline-number {
+        font-size: 22px;
+    }
+    .products {
+        padding: 15px;
+        height: 320px;
+    }
+    .products h1 {
+        font-size: 25px;
+    }
+    .product1 {
+        padding: 20px;
+        height:150px;
+    }
+    .product2 {
+        padding: 20px;
+        height:150px;
+    }
+    .product3 {
+        padding: 20px;
+        height:150px;
+    }
+    .product1 img {
+        width:90px;
+    }
+    .product2 img {
+        width:90px;
+    }
+    .product3 img {
+        width:90px;
+    }
+    .product1 p {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .product2 p {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .product3 p {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .lihat-produk-alkes {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .artikel1 {
+        height:120px;
+    }
+    .artikel2 {
+        height:120px;
+    }
+    .artikel3 {
+        height:120px;
+    }
+    .artikel1 .juduldanlink {
+        width: 350px;
+    }
+    .artikel2 .juduldanlink {
+        width: 350px;
+    }
+    .artikel3 .juduldanlink {
+        width: 350px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikelimg {
+        height: 120px;
+        width: auto;
+        border-radius: 10px;
+    }
+    .lihatartikel {
+        font-size: 18px;
+    }
+    .asuransikesehatan {
+        justify-content:flex-start;
+        margin-top: 40px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 21px;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 18px;
+    }
+    .asuransikesehatan .juduldanlink {
+        width: 450px;
+    }
+    .layananbantuanbiaya {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 21px;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 18px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+}
+@media (min-width:768px) and (max-width:819px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height:70px;
+    }
+    .tagline {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .user-info {
+        background:none;
+        box-shadow: none;
+    }
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 22px;
+    }
+    .icon-link-keranjang {
+        margin-left: 480px;
+    }
+    .daftarRStext {
+        font-size: 27px;
+        font-weight: 700;
+        height:30px;
+    }
+    .hospital-section {
+        padding:15px;
+    }
+    .hospital-logos {
+        padding: 10px;
+    }
+    .icon-link-daftarrs {
+        margin-left: 270px;
+        margin-top: 25px;
+    }
+    .icon-link-daftarrs .material-icons {
+        font-size: 35px;
+    }
+    .hospital-logos .rs1 {
+        width: 80px;
+        height: 80px;
+    }
+    .hospital-logos .rs2 {
+        width: 130px;
+        height: 80px;
+    }
+    .hospital-logos .rs3 {
+        width: 130px;
+        height: 80px;
+    }
+    .pertolongan-pertama {
+        height: 120px;
+    }
+    .pertolongan-pertama-24jam {
+        width: 350px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 24px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 13px;
+    }
+    .emergency-section {
+        padding: 20px;
+        margin-left: 100px;
+    }
+    .hotline-number {
+        font-size: 22px;
+    }
+    .products {
+        padding: 15px;
+        height: 320px;
+    }
+    .products h1 {
+        font-size: 25px;
+    }
+    .product1 {
+        padding: 20px;
+        height:150px;
+    }
+    .product2 {
+        padding: 20px;
+        height:150px;
+    }
+    .product3 {
+        padding: 20px;
+        height:150px;
+    }
+    .product1 img {
+        width:90px;
+    }
+    .product2 img {
+        width:90px;
+    }
+    .product3 img {
+        width:90px;
+    }
+    .product1 p {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .product2 p {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .product3 p {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .lihat-produk-alkes {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .artikel1 {
+        height:120px;
+    }
+    .artikel2 {
+        height:120px;
+    }
+    .artikel3 {
+        height:120px;
+    }
+    .artikel1 .juduldanlink {
+        width: 350px;
+    }
+    .artikel2 .juduldanlink {
+        width: 350px;
+    }
+    .artikel3 .juduldanlink {
+        width: 350px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikelimg {
+        height: 120px;
+        width: auto;
+        border-radius: 10px;
+    }
+    .lihatartikel {
+        font-size: 18px;
+    }
+    .asuransikesehatan {
+        justify-content:flex-start;
+        margin-top: 40px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 21px;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 18px;
+    }
+    .asuransikesehatan .juduldanlink {
+        width: 450px;
+    }
+    .layananbantuanbiaya {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 21px;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 18px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+}
+@media (min-width:820px) and (max-width:1023px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo-img {
+        height:70px;
+    }
+    .tagline {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .user-info {
+        background:none;
+        box-shadow: none;
+    }
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 22px;
+    }
+    .icon-link-keranjang {
+        margin-left: 500px;
+    }
+    .daftarRStext {
+        font-size: 27px;
+        font-weight: 700;
+        height:30px;
+    }
+    .hospital-section {
+        padding:15px;
+    }
+    .hospital-logos {
+        padding: 10px;
+    }
+    .icon-link-daftarrs {
+        margin-left: 220px;
+        margin-top: 35px;
+    }
+    .icon-link-daftarrs .material-icons {
+        font-size: 35px;
+    }
+    .hospital-logos .rs1 {
+        width: 100px;
+        height: 100px;
+    }
+    .hospital-logos .rs2 {
+        width: 170px;
+        height: 100px;
+    }
+    .hospital-logos .rs3 {
+        width: 170px;
+        height: 100px;
+    }
+    .pertolongan-pertama {
+        height: 130px;
+    }
+    .pertolongan-pertama-24jam {
+        width: 370px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 25px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 15px;
+    }
+    .emergency-section {
+        padding: 20px;
+        margin-left: 100px;
+    }
+    .hotline-number {
+        font-size: 25px;
+    }
+    .products {
+        padding: 15px;
+        height: 350px;
+    }
+    .products h1 {
+        font-size: 26px;
+    }
+    .product1 {
+        padding: 20px;
+        height:170px;
+    }
+    .product2 {
+        padding: 20px;
+        height:170px;
+    }
+    .product3 {
+        padding: 20px;
+        height:170px;
+    }
+    .product1 img {
+        width:90px;
+    }
+    .product2 img {
+        width:90px;
+    }
+    .product3 img {
+        width:90px;
+    }
+    .product1 p {
+        font-size: 17px;
+        margin-top: 40px;
+    }
+    .product2 p {
+        font-size: 17px;
+        margin-top: 40px;
+    }
+    .product3 p {
+        font-size: 17px;
+        margin-top: 40px;
+    }
+    .lihat-produk-alkes {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .artikel1 {
+        height:120px;
+    }
+    .artikel2 {
+        height:120px;
+    }
+    .artikel3 {
+        height:120px;
+    }
+    .artikel1 .juduldanlink {
+        width: 350px;
+    }
+    .artikel2 .juduldanlink {
+        width: 350px;
+    }
+    .artikel3 .juduldanlink {
+        width: 350px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 20px;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 15px;
+    }
+    .artikelimg {
+        height: 120px;
+        width: auto;
+        border-radius: 10px;
+    }
+    .lihatartikel {
+        font-size: 18px;
+    }
+    .asuransikesehatan {
+        justify-content:flex-start;
+        margin-top: 40px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 21px;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 18px;
+    }
+    .asuransikesehatan .juduldanlink {
+        width: 450px;
+    }
+    .layananbantuanbiaya {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 21px;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 18px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+}
+@media (min-width:1024px) and (max-width:1200px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: column;
+        min-height:100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 60px;
+    }
+    .logo-img {
+        height:80px;
+    }
+    .tagline {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: none;
+        width:95%;
+    }
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 20px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 750px;
+        color: #333;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 30px;
+    }
+    .daftar-rs {
+        display: flex;
+        flex-direction: row;
+        width:95%;
+        justify-content: space-between;
+    }
+    .daftarrsimg {
+        height: 300px;
+        width:500px;
+    }
+    .daftar-rs-column {
+        width:450px;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .daftarRStext2 {
+        color: #333;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .hospital-logos {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+    }
+    .hospital-logos .rs1 {
+        width: 70px;
+        height: 70px;
+    }
+    .hospital-logos .rs2 {
+        width: 100px;
+        height: 60px;
+    }
+    .hospital-logos .rs3 {
+        width: 100px;
+        height: 60px;
+    }
+    .lihat-partner-rs {
+        margin-top: 50px;
+        margin-left: 230px;
+        display: flex;
+        flex-direction: row;
+    }
+    .lihat-partner-rs-link {
+        color: #333;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .pertolongan-pertama {
+        position: relative;
+        right:220px;
+        display: flex;
+        flex-direction: row;
+        max-width: 95vw;
+        height: 150px;
+        align-items: center;
+        color: #333;
+    }
+    .pertolongan-pertama-24jam {
+        display: flex;
+        flex-direction:column;
+        width: 300px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 25px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .emergency-section {
+        display: flex;
+        align-items: center;
+        background: white;
+        height: 40px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .hotline-number {
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .products {
+        text-align: center;
+        padding: 10px;
+        border-radius: 15px;
+        width: 90%;
+        height:350px;
+        box-shadow:none;
+    }
+    .products h1 {
+        color: #333;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .product-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .product1 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product1 img {
+        height:auto;
+        width:120px;
+    }
+    .product1 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product2 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product2 img {
+        height:auto;
+        width:120px;
+    }
+    .product2 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product3 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product3 img {
+        height:auto;
+        width:120px;
+    }
+    .product3 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product4 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product4 img {
+        height:auto;
+        width:120px;
+    }
+    .product4 p {
+        font-size: 20px;
+        font-weight: 500;
+    }.product5 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product5 img {
+        height:auto;
+        width:120px;
+    }
+    .product5 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .lihat-produk-alkes {
+        display: block;
+        margin-top: 20px;
+        color: #333;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .artikelkesehatantext {
+        text-align: left;
+        color: #333;
+        font-size: 25px;
+        font-weight: 700;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .artikel1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:120px;
+        width:95%;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel1 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+    }
+    .artikelimg {
+        width: 160px;
+        border-radius: 10px;
+    }
+    .artikel2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:120px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel2 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+    }
+    .artikel3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:120px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel3 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+    }
+    .lihatartikel {
+        text-align: right;
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+        height:20px;
+        width:95%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .asuransikesehatan {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:150px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .asuransiimg {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .asuransikesehatan .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+        font-weight: 600;
+    }
+    .layananbantuanbiaya {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:150px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .layananbantuanbiayaimg {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+        font-weight: 600;
+    }
+    .footer {
+        height: 50px;
+    }
+    .footer h1 {
+        font-size: 10px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1201px) and (max-width:1365px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: column;
+        min-height:100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 50px;
+    }
+    .logo-img {
+        margin-left: 20px;
+        height:60px;
+    }
+    .tagline {
+        font-size: 15px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: none;
+        width:95%;
+    }
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 17px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 1000px;
+        color: #333;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 20px;
+    }
+    .daftar-rs {
+        display: flex;
+        flex-direction: row;
+        width:95%;
+        justify-content: space-around;
+    }
+    .daftarrsimg {
+        height: 400px;
+        width:600px;
+    }
+    .daftar-rs-column {
+        width:450px;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .daftarRStext2 {
+        color: #333;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .hospital-logos {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+    }
+    .hospital-logos .rs1 {
+        width: 70px;
+        height: 70px;
+    }
+    .hospital-logos .rs2 {
+        width: 100px;
+        height: 60px;
+    }
+    .hospital-logos .rs3 {
+        width: 100px;
+        height: 60px;
+    }
+    .lihat-partner-rs {
+        margin-top: 150px;
+        margin-left: 230px;
+        display: flex;
+        flex-direction: row;
+    }
+    .lihat-partner-rs-link {
+        color: #333;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .lihat-partner-rs-link:hover {
+        color: #5e5e5e;
+    }
+    .pertolongan-pertama {
+        position: relative;
+        right:300px;
+        display: flex;
+        flex-direction: row;
+        max-width: 95vw;
+        height: 150px;
+        align-items: center;
+        color: #333;
+    }
+    .pertolongan-pertama-24jam {
+        display: flex;
+        flex-direction:column;
+        width: 380px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 25px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .emergency-section {
+        display: flex;
+        align-items: center;
+        background: white;
+        height: 40px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .hotline-number {
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .products {
+        text-align: center;
+        padding: 10px;
+        border-radius: 15px;
+        width: 90%;
+        height:400px;
+        box-shadow:none;
+    }
+    .products h1 {
+        color: #333;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .product-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .product1 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product1 img {
+        height:auto;
+        width:120px;
+    }
+    .product1 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product2 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product2 img {
+        height:auto;
+        width:120px;
+    }
+    .product2 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product3 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product3 img {
+        height:auto;
+        width:120px;
+    }
+    .product3 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product4 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product4 img {
+        height:auto;
+        width:120px;
+    }
+    .product4 p {
+        font-size: 20px;
+        font-weight: 500;
+    }.product5 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product5 img {
+        height:auto;
+        width:120px;
+    }
+    .product5 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .lihat-produk-alkes {
+        display: block;
+        margin-top: 20px;
+        color: #333;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .artikelkesehatantext {
+        text-align: left;
+        color: #333;
+        font-size: 25px;
+        font-weight: 700;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .artikel1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:120px;
+        width:95%;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel1 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+    }
+    .artikelimg {
+        width: 160px;
+        border-radius: 10px;
+    }
+    .artikel2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:120px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel2 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+    }
+    .artikel3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:120px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel3 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+    }
+    .lihatartikel {
+        text-align: right;
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+        height:20px;
+        width:95%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .asuransikesehatan {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:150px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .asuransiimg {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .asuransikesehatan .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+        font-weight: 600;
+    }
+    .layananbantuanbiaya {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:150px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .layananbantuanbiayaimg {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 15px;
+        color: #333;
+        font-weight: 600;
+    }
+    .footer {
+        height: 50px;
+    }
+    .footer h1 {
+        font-size: 10px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1366px) and (max-width:1439px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: column;
+        min-height:100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 60px;
+    }
+    .logo-img {
+        height:80px;
+    }
+    .tagline {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: none;
+        width:95%;
+    }
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 20px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 1050px;
+        color: #333;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 28px;
+    }
+    .daftar-rs {
+        display: flex;
+        flex-direction: row;
+        width:95%;
+        justify-content: flex-start;
+    }
+    .daftarrsimg {
+        height: 400px;
+        width:600px;
+    }
+    .daftar-rs-column {
+        margin-left: 80px;
+        width:600px;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .daftarRStext2 {
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+    .hospital-logos {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+    }
+    .hospital-logos .rs1 {
+        width: 120px;
+        height: 120px;
+    }
+    .hospital-logos .rs2 {
+        width: 180px;
+        height: 110px;
+    }
+    .hospital-logos .rs3 {
+        width: 180px;
+        height: 110px;
+    }
+    .lihat-partner-rs {
+        margin-top: 60px;
+        margin-left: 340px;
+        display: flex;
+        flex-direction: row;
+    }
+    .lihat-partner-rs-link {
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .pertolongan-pertama {
+        position: relative;
+        right:330px;
+        display: flex;
+        flex-direction: row;
+        max-width: 95vw;
+        height: 150px;
+        align-items: center;
+        color: #333;
+    }
+    .pertolongan-pertama-24jam {
+        display: flex;
+        flex-direction:column;
+        width: 400px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 35px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .emergency-section {
+        display: flex;
+        align-items: center;
+        background: white;
+        height: 60px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-left: 50px;
+    }
+    .hotline-number {
+        color: red;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .products {
+        text-align: center;
+        padding: 10px;
+        border-radius: 15px;
+        width: 90%;
+        height:400px;
+        box-shadow:none;
+    }
+    .products h1 {
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .product-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .product1 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product1 img {
+        height:auto;
+        width:120px;
+    }
+    .product1 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product2 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product2 img {
+        height:auto;
+        width:120px;
+    }
+    .product2 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product3 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product3 img {
+        height:auto;
+        width:120px;
+    }
+    .product3 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product4 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product4 img {
+        height:auto;
+        width:120px;
+    }
+    .product4 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product5 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product5 img {
+        height:auto;
+        width:120px;
+    }
+    .product5 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .lihat-produk-alkes {
+        display: block;
+        margin-top: 30px;
+        color: #333;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .artikelkesehatantext {
+        text-align: left;
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .artikel1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel1 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikelimg {
+        width: 200px;
+        border-radius: 10px;
+    }
+    .artikel2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel2 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel3 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .lihatartikel {
+        text-align: right;
+        color: #333;
+        font-size: 25px;
+        font-weight: 600;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .asuransikesehatan {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:200px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .asuransiimg {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .asuransikesehatan .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 30px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 25px;
+        font-weight: 700;
+        color: #333;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+    .layananbantuanbiaya {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:200px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .layananbantuanbiayaimg {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 30px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 25px;
+        font-weight: 700;
+        color: #333;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+    .footer {
+        height: 50px;
+    }
+    .footer h1 {
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1440px) and (max-width:1919px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: column;
+        min-height:100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 70px;
+    }
+    .logo-img {
+        height:90px;
+    }
+    .tagline {
+        margin-right: 10px;
+        font-size: 25px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: none;
+        width:95%;
+    }
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 23px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 1100px;
+        color: #333;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 28px;
+    }
+    .daftar-rs {
+        display: flex;
+        flex-direction: row;
+        width:95%;
+        justify-content: flex-start;
+    }
+    .daftarrsimg {
+        height: 500px;
+        width:750px;
+    }
+    .daftar-rs-column {
+        margin-left: 60px;
+        width:600px;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .daftarRStext2 {
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+    .hospital-logos {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+    }
+    .hospital-logos .rs1 {
+        width: 120px;
+        height: 120px;
+    }
+    .hospital-logos .rs2 {
+        width: 180px;
+        height: 110px;
+    }
+    .hospital-logos .rs3 {
+        width: 180px;
+        height: 110px;
+    }
+    .lihat-partner-rs {
+        margin-top: 140px;
+        margin-left: 340px;
+        display: flex;
+        flex-direction: row;
+    }
+    .lihat-partner-rs-link {
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .pertolongan-pertama {
+        position: relative;
+        right:340px;
+        display: flex;
+        flex-direction: row;
+        max-width: 95vw;
+        height: 150px;
+        align-items: center;
+        color: #333;
+    }
+    .pertolongan-pertama-24jam {
+        display: flex;
+        flex-direction:column;
+        width: 400px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 35px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .emergency-section {
+        display: flex;
+        align-items: center;
+        background: white;
+        height: 60px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-left: 80px;
+    }
+    .hotline-number {
+        color: red;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .products {
+        text-align: center;
+        padding: 10px;
+        border-radius: 15px;
+        width: 90%;
+        height:400px;
+        box-shadow:none;
+    }
+    .products h1 {
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .product-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .product1 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product1 img {
+        height:auto;
+        width:120px;
+    }
+    .product1 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product2 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product2 img {
+        height:auto;
+        width:120px;
+    }
+    .product2 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product3 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product3 img {
+        height:auto;
+        width:120px;
+    }
+    .product3 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product4 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product4 img {
+        height:auto;
+        width:120px;
+    }
+    .product4 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product5 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product5 img {
+        height:auto;
+        width:120px;
+    }
+    .product5 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .lihat-produk-alkes {
+        display: block;
+        margin-top: 30px;
+        color: #333;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .artikelkesehatantext {
+        text-align: left;
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .artikel1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel1 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikelimg {
+        width: 220px;
+        border-radius: 10px;
+    }
+    .artikel2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel2 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel3 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .lihatartikel {
+        text-align: right;
+        color: #333;
+        font-size: 25px;
+        font-weight: 600;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .asuransikesehatan {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:200px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .asuransiimg {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .asuransikesehatan .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 30px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 25px;
+        font-weight: 700;
+        color: #333;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+    .layananbantuanbiaya {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:200px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .layananbantuanbiayaimg {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 30px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 25px;
+        font-weight: 700;
+        color: #333;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+    .footer {
+        height: 50px;
+    }
+    .footer h1 {
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+@media (min-width:1920px) and (max-width: 2560px) {
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display:block;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: column;
+        min-height:100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-weight: bold;
+        height: 80px;
+    }
+    .logo-img {
+        height:100px;
+    }
+    .tagline {
+        margin-right: 10px;
+        font-size: 25px;
+        color: #666;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: none;
+        width:95%;
+    }
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+    .icon-link-keranjang {
+        margin-left: 1500px;
+        color: #333;
+    }
+    .icon-link-keranjang .material-icons {
+        font-size: 28px;
+    }
+    .daftar-rs {
+        display: flex;
+        flex-direction: row;
+        width:95%;
+        justify-content: flex-start;
+    }
+    .daftarrsimg {
+        height: 550px;
+        width:850px;
+    }
+    .daftar-rs-column {
+        margin-left: 100px;
+        width:850px;
+    }
+    .daftarRStext {
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .daftarRStext2 {
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+    .hospital-logos {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+    }
+    .hospital-logos .rs1 {
+        width: 120px;
+        height: 120px;
+    }
+    .hospital-logos .rs2 {
+        width: 180px;
+        height: 110px;
+    }
+    .hospital-logos .rs3 {
+        width: 180px;
+        height: 110px;
+    }
+    .lihat-partner-rs {
+        margin-top: 200px;
+        margin-left: 550px;
+        display: flex;
+        flex-direction: row;
+    }
+    .lihat-partner-rs-link {
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .pertolongan-pertama {
+        position: relative;
+        right:550px;
+        display: flex;
+        flex-direction: row;
+        max-width: 95vw;
+        height: 250px;
+        align-items: center;
+        color: #333;
+    }
+    .pertolongan-pertama-24jam {
+        display: flex;
+        flex-direction:column;
+        width: 400px;
+    }
+    .pertolongan-pertama-24jam h1 {
+        font-size: 35px;
+    }
+    .pertolongan-pertama-24jam h2 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .emergency-section {
+        display: flex;
+        align-items: center;
+        background: white;
+        height: 60px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-left: 100px;
+    }
+    .hotline-number {
+        color: red;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .products {
+        text-align: center;
+        padding: 10px;
+        border-radius: 15px;
+        width: 90%;
+        height:450px;
+        box-shadow:none;
+    }
+    .products h1 {
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .product-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .product1 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product1 img {
+        height:auto;
+        width:120px;
+    }
+    .product1 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product2 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product2 img {
+        height:auto;
+        width:120px;
+    }
+    .product2 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product3 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product3 img {
+        height:auto;
+        width:120px;
+    }
+    .product3 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product4 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product4 img {
+        height:auto;
+        width:120px;
+    }
+    .product4 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .product5 {
+        background: #f9f9f9;
+        padding: 10px;
+        height:200px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product5 img {
+        height:auto;
+        width:120px;
+    }
+    .product5 p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .lihat-produk-alkes {
+        display: block;
+        margin-top: 30px;
+        color: #333;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .artikelkesehatantext {
+        text-align: left;
+        color: #333;
+        font-size: 35px;
+        font-weight: 700;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .artikel1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel1 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel1 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel1 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikelimg {
+        width: 220px;
+        border-radius: 10px;
+    }
+    .artikel2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel2 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel2 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel2 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .artikel3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 10px;
+        height:150px;
+        width:95%;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    } 
+    .artikel3 .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .artikel3 .juduldanlink .judul {
+        font-size: 25px;
+        color: #333;
+    }
+    .artikel3 .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+    }
+    .lihatartikel {
+        text-align: right;
+        color: #333;
+        font-size: 25px;
+        font-weight: 600;
+        height:20px;
+        width:95%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .asuransikesehatan {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:200px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .asuransiimg {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .asuransikesehatan .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 30px;
+    }
+    .asuransikesehatan .juduldanlink .judul {
+        font-size: 25px;
+        font-weight: 700;
+        color: #333;
+    }
+    .asuransikesehatan .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+    .layananbantuanbiaya {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        height:200px;
+        align-items: center;
+        width:95%;
+        margin-top: 10px;
+    }
+    .layananbantuanbiayaimg {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .layananbantuanbiaya .juduldanlink {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 30px;
+    }
+    .layananbantuanbiaya .juduldanlink .judul {
+        font-size: 25px;
+        font-weight: 700;
+        color: #333;
+    }
+    .layananbantuanbiaya .juduldanlink .link {
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+    .footer {
+        height: 50px;
+    }
+    .footer h1 {
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+    }
+}
