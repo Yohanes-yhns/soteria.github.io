@@ -31,52 +31,63 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const buyButtons = document.querySelectorAll(".buy-btn"); // Ambil semua tombol Beli
-    const popup = document.getElementById("popup"); // Popup container
+    // Ambil semua tombol "Beli"
+    const buyButtons = document.querySelectorAll(".buy-btn");
+    const popupDetail = document.getElementById("popup-detail");
     const popupImage = document.getElementById("popup-image");
     const popupName = document.getElementById("popup-name");
     const popupQuantity = document.getElementById("popup-quantity");
     const popupPrice = document.getElementById("popup-price");
-    const closeButton = document.querySelector(".close-btn");
+    const closeDetail = document.querySelector(".close-detail");
     const confirmButton = document.getElementById("confirm-btn");
 
+    const popupForm = document.getElementById("popup-form");
+    const formImage = document.getElementById("form-image");
+    const formName = document.getElementById("form-name");
+    const formQuantity = document.getElementById("form-quantity");
+    const formPrice = document.getElementById("form-price");
+    const closeForm = document.querySelector(".close-form");
+
+    // Event listener untuk tombol "Beli"
     buyButtons.forEach(button => {
         button.addEventListener("click", function () {
-            let productCard = this.closest(".product-card1, .product-card2, .product-card3, .product-card4, .product-card5, .product-card6, .product-card7, .product-card8, .product-card9, .product-card10, .product-card11, .product-card12, .product-card13, .product-card14");
-            let productImage = productCard.querySelector(".product-image").src;
-            let productName = productCard.querySelector(".product-name").innerText;
-            let productQuantity = productCard.querySelector(".quantity-input").value;
-            let productPrice = productCard.querySelector(".product-price").innerText.replace("Rp ", "").replace(".", ""); // Hapus "Rp" dan titik
-            
-            let totalPrice = parseInt(productQuantity) * parseInt(productPrice);
+            const productCard = button.closest(".product-card1, .product-card2, .product-card3, .product-card4, .product-card5, .product-card6, .product-card7, .product-card8, .product-card9, .product-card10, .product-card11, .product-card12, .product-card13, .product-card14, .product-card15");
+            const productImage = productCard.querySelector(".product-image").src;
+            const productName = productCard.querySelector(".product-name").textContent;
+            const productQuantity = productCard.querySelector(".quantity-input").value;
+            const productPrice = productCard.querySelector(".product-price").textContent;
 
-            // Tampilkan di popup
+            // Masukkan data ke popup pertama
             popupImage.src = productImage;
-            popupName.innerText = productName;
-            popupQuantity.innerText = productQuantity;
-            popupPrice.innerText = "Rp " + totalPrice.toLocaleString("id-ID");
+            popupName.textContent = productName;
+            popupQuantity.textContent = productQuantity;
+            popupPrice.textContent = productPrice;
 
-            // Munculkan popup
-            popup.style.display = "flex";
+            // Tampilkan popup pertama
+            popupDetail.style.display = "flex";
         });
     });
 
-    // Tutup popup saat tombol close diklik
-    closeButton.addEventListener("click", function () {
-        popup.style.display = "none";
+    // Event listener untuk tombol close di popup pertama
+    closeDetail.addEventListener("click", function () {
+        popupDetail.style.display = "none";
     });
 
-    // Tutup popup saat klik di luar konten popup
-    window.addEventListener("click", function (e) {
-        if (e.target === popup) {
-            popup.style.display = "none";
-        }
-    });
-
-    // Tambahkan event konfirmasi (misalnya simpan ke database atau lanjut ke halaman lain)
+    // Event listener untuk tombol "Konfirmasi"
     confirmButton.addEventListener("click", function () {
-        alert("Pesanan dikonfirmasi!");
-        popup.style.display = "none";
+        // Copy data ke popup form
+        formImage.src = popupImage.src;
+        formName.textContent = popupName.textContent;
+        formQuantity.textContent = popupQuantity.textContent;
+        formPrice.textContent = popupPrice.textContent;
+
+        // Sembunyikan popup pertama, munculkan popup kedua
+        popupDetail.style.display = "none";
+        popupForm.style.display = "flex";
+    });
+
+    // Event listener untuk tombol close di popup form
+    closeForm.addEventListener("click", function () {
+        popupForm.style.display = "none";
     });
 });
-

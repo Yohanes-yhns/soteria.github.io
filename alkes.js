@@ -92,5 +92,77 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const submitOrderBtn = document.getElementById("submit-order");
+    const cartIcon = document.querySelector(".icon-link-keranjang");
+    const cartPopup = document.getElementById("cart-popup"); // Popup keranjang
+    const cartItemsContainer = document.getElementById("cart-items"); // Tempat menampilkan pesanan di popup
+    const closeCartPopup = document.querySelector(".close-cart");
+
+    // Simpan pesanan ke localStorage saat "Pesan Sekarang" diklik
+    submitOrderBtn.addEventListener("click", function () {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const orderData = {
+            image: document.getElementById("form-image").src,
+            name: document.getElementById("form-name").textContent,
+            quantity: document.getElementById("form-quantity").textContent,
+            price: document.getElementById("form-price").textContent
+        };
+
+        cart.push(orderData);
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Pesanan telah ditambahkan ke keranjang!"); // Notifikasi sukses
+
+        // Sembunyikan popup form setelah pesan disimpan
+        document.getElementById("popup-form").style.display = "none";
+    });
+
+    // Tampilkan popup keranjang saat ikon keranjang diklik
+    cartIcon.addEventListener("click", function () {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cartItemsContainer.innerHTML = "";
+
+        if (cart.length === 0) {
+            cartItemsContainer.innerHTML = "<p>Keranjang kosong!</p>";
+        } else {
+            cart.forEach((item, index) => {
+                let cartItem = document.createElement("div");
+                cartItem.classList.add("cart-item");
+                cartItem.innerHTML = `
+                    <img src="${item.image}" class="cart-item-image">
+                    <div class="cart-item-info">
+                        <p class="cart-item-name">${item.name}</p>
+                        <p>Qty: ${item.quantity}</p>
+                        <p>Harga: ${item.price}</p>
+                    </div>
+                    <button class="remove-item" data-index="${index}">Hapus</button>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+            });
+        }
+
+        cartPopup.style.display = "flex";
+    });
+
+    // Hapus item dari keranjang
+    cartItemsContainer.addEventListener("click", function (e) {
+        if (e.target.classList.contains("remove-item")) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let index = e.target.getAttribute("data-index");
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            cartIcon.click(); // Refresh popup
+        }
+    });
+
+    // Tutup popup keranjang
+    closeCartPopup.addEventListener("click", function () {
+        cartPopup.style.display = "none";
+    });
+});
+
+
 
 

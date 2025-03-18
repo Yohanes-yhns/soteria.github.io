@@ -187,20 +187,47 @@
                 <p class="product-price">Rp 83.000</p>
                 <button class="buy-btn">Beli</button>
             </div>
-             <!-- Popup -->
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <span class="close-btn">&times;</span>
-        <img id="popup-image" src="" alt="Product Image">
-        <h2 id="popup-name"></h2>
-        <p>Jumlah: <span id="popup-quantity"></span></p>
-        <p>Total Harga: <span id="popup-price"></span></p>
-        <button id="confirm-btn">Konfirmasi</button>
-    </div>
-</div>
-            <!-- End Popup -->
         </div>
-
+           <!-- Popup -->
+           <div id="popup-detail" class="popup">
+            <div class="popup-content">
+                <span class="close-btn close-detail">&times;</span>
+                <img id="popup-image" src="" alt="Product Image">
+                <h2 id="popup-name"></h2>
+                <p>Jumlah: <span id="popup-quantity"></span></p>
+                <p>Total Harga: <span id="popup-price"></span></p>
+                <button id="confirm-btn">Konfirmasi</button>
+            </div>
+        </div>
+        
+                    <!-- End Popup -->
+        <!-- Popup Kedua: Formulir Input Data User -->
+        <div id="popup-form" class="popup">
+            <div class="popup-content">
+                <span class="close-btn close-form">&times;</span>
+                <img id="form-image" src="" alt="Product Image">
+                <h2 id="form-name"></h2>
+                <p>Jumlah: <span id="form-quantity"></span></p>
+                <p>Total Harga: <span id="form-price"></span></p>
+                
+                <input type="text" id="fullname" placeholder="Nama Lengkap">
+                <input type="text" id="address" placeholder="Alamat">
+                <input type="text" id="phone" placeholder="Nomor Telepon">
+                
+                <select id="shipping">
+                    <option value="JNE">JNE</option>
+                    <option value="TIKI">TIKI</option>
+                    <option value="SiCepat">SiCepat</option>
+                </select>
+                <select id="payment">
+                    <option value="COD">COD</option>
+                    <option value="Transfer">Transfer Bank</option>
+                    <option value="eWallet">e-Wallet</option>
+                </select>
+        
+                <button id="submit-order">Pesan Sekarang</button>
+            </div>
+        </div>
         <div class="footer">
             <div class="mediasosial">
                 <img src="img/pngwing.com (1).png">
