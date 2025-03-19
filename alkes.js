@@ -118,49 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Sembunyikan popup form setelah pesan disimpan
         document.getElementById("popup-form").style.display = "none";
     });
-
-    // Tampilkan popup keranjang saat ikon keranjang diklik
-    cartIcon.addEventListener("click", function () {
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        cartItemsContainer.innerHTML = "";
-
-        if (cart.length === 0) {
-            cartItemsContainer.innerHTML = "<p>Keranjang kosong!</p>";
-        } else {
-            cart.forEach((item, index) => {
-                let cartItem = document.createElement("div");
-                cartItem.classList.add("cart-item");
-                cartItem.innerHTML = `
-                    <img src="${item.image}" class="cart-item-image">
-                    <div class="cart-item-info">
-                        <p class="cart-item-name">${item.name}</p>
-                        <p>Qty: ${item.quantity}</p>
-                        <p>Harga: ${item.price}</p>
-                    </div>
-                    <button class="remove-item" data-index="${index}">Hapus</button>
-                `;
-                cartItemsContainer.appendChild(cartItem);
-            });
-        }
-
-        cartPopup.style.display = "flex";
-    });
-
-    // Hapus item dari keranjang
-    cartItemsContainer.addEventListener("click", function (e) {
-        if (e.target.classList.contains("remove-item")) {
-            let cart = JSON.parse(localStorage.getItem("cart")) || [];
-            let index = e.target.getAttribute("data-index");
-            cart.splice(index, 1);
-            localStorage.setItem("cart", JSON.stringify(cart));
-            cartIcon.click(); // Refresh popup
-        }
-    });
-
-    // Tutup popup keranjang
-    closeCartPopup.addEventListener("click", function () {
-        cartPopup.style.display = "none";
-    });
 });
 
 
