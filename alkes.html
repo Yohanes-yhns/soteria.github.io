@@ -23,9 +23,9 @@
     <div class="user-info">
         <div class="user">
         <div class="profile-pic"></div>
-        <div class="username">Username</div>
+        <a class="username" href="user.html">Username</a>
         </div>
-        <a href="#" class="icon-link-keranjang">
+        <a href="purchase.html" class="icon-link-keranjang">
             <span class="material-icons">local_mall</span>
         </a>
     </div>
@@ -238,6 +238,33 @@
                 <button id="submit-order">Pesan Sekarang</button>
             </div>
         </div>
+
+        <!-- PopUpKomfirmasi -->
+        <div id="popup-confirmation" class="popup">
+            <div class="popup-content">
+                <span class="close-btn close-confirmation">&times;</span>
+                <h2>Konfirmasi Pesanan</h2>
+                <p>Nama: <span id="confirm-name"></span></p>
+                <p>Alamat: <span id="confirm-address"></span></p>
+                <p>Nomor HP: <span id="confirm-phone"></span></p>
+                <p>Jasa Pengiriman: <span id="confirm-shipping"></span></p>
+                <p>Metode Pembayaran: <span id="confirm-payment"></span></p>
+                <p>Produk: <span id="confirm-product"></span></p>
+                <p>Jumlah: <span id="confirm-quantity"></span></p>
+                <p>Total Harga: <span id="confirm-price"></span></p>
+                <button id="confirm-final">Konfirmasi</button>
+            </div>
+        </div>
+
+        <div id="popup-thankyou" class="popup">
+            <div class="popup-content">
+                <h2>Terima Kasih!</h2>
+                <p>Pesanan Anda sedang dalam proses.</p>
+                <button id="view-cart">Lihat Keranjang</button>
+            </div>
+        </div>
+        
+        
         
         <div class="footer">
             <div class="mediasosial">

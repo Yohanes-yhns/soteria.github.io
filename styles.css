@@ -64,6 +64,10 @@ body {
     font-size: 18px;
     color: #333;
     font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
 }
 .icon-link-keranjang {
     margin-left: 190px;
