@@ -33,36 +33,65 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     font-weight: bold;
     height: 30px;
+    align-items: center;
 }
 .logo-img {
     height:50px;
+}
+.login-signup-logout-tagline {
+    display: flex;
+    flex-direction: column;
 }
 .tagline {
     margin-right: 5px;
     font-size: 12px;
     color: #666;
+    font-style: oblique;
+    font-weight: 700;
+}
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
 }
 .user-info {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    background: none;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: none;
-    width:95%;
-}
-.user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: auto;
     background: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-top: 10px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
 }
 .profile-pic {
     width: 50px;
@@ -75,10 +104,28 @@ body {
     font-size: 18px;
     color: #333;
     font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
 .icon-link-keranjang {
-    text-decoration: none;
     color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
 }
 
 .products {
@@ -343,22 +390,87 @@ body {
     font-weight: 500;
 }
 @media screen and (min-width: 320px) {
-.tagline {
-    font-size: 10px;
-}
-.user-info {
-    width: 95%;
-}
-.profile-pic {
-    width: 30px;
-    height: 30px;
-}
-.username {
-    font-size: 15px;
-}
-.icon-link-keranjang .material-icons {
-    font-size: 20px;
-}
+    .tagline {
+        font-size: 10px;
+    }
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .login:hover {
+        color: #5e5e5e;
+    }
+    .signup {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .signup:hover {
+        color: #5e5e5e;
+    }
+    .section-user-keranjang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:95%;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+        height: auto;
+    }
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .username:hover {
+        color: #5e5e5e;
+    }
+    .keranjang-reminder {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    .icon-link-keranjang {
+        color: #333;
+    }
+    .icon-link-keranjang:hover {
+        color: #5e5e5e;
+    }
+    .icon-link-reminder {
+        color: #333;
+    }
+    .icon-link-reminder:hover {
+        color: #5e5e5e;
+    }
 }
 @media screen and (min-width: 712px) {
     .products {
@@ -447,9 +559,6 @@ body {
     }
     .username {
         font-size: 20px;
-    }
-    .icon-link-keranjang .material-icons {
-        font-size: 25px;
     }
     .footer {
         height: 70px;

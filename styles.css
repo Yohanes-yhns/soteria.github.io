@@ -33,14 +33,53 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     font-weight: bold;
     height: 30px;
+    align-items: center;
 }
 .logo-img {
     height:50px;
+}
+.login-signup-logout-tagline {
+    display: flex;
+    flex-direction: column;
 }
 .tagline {
     margin-right: 5px;
     font-size: 12px;
     color: #666;
+    font-style: oblique;
+    font-weight: 700;
+}
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
 }
 .user-info {
     display: flex;
@@ -51,7 +90,8 @@ body {
     margin-top: 10px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width:90%;
+    width:auto;
+    height: auto;
 }
 .profile-pic {
     width: 50px;
@@ -69,11 +109,22 @@ body {
 .username:hover {
     color: #5e5e5e;
 }
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
 .icon-link-keranjang {
-    margin-left: 190px;
     color: #333;
 }
 .icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
     color: #5e5e5e;
 }
 .daftarrsimg {
@@ -477,15 +528,38 @@ body {
     .tagline {
         font-size: 10px;
     }
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        font-size: 13px;
+    }
+    .signup {
+        font-size: 13px;
+    }
     .profile-pic {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+        background: #ddd;
+        border-radius: 50%;
     }
     .username {
+        margin-left: 5px;
         font-size: 15px;
     }
-    .icon-link-keranjang {
-        margin-left: 150px;
+    .keranjang-reminder {
+        gap: 5px;
+    }
+    .icon-link-keranjang .material-icons{
+        font-size: 20px;
+        color: #333;
+    }
+    .icon-link-reminder .material-icons{
+        font-size: 20px;
         color: #333;
     }
     .daftarRStext {
@@ -564,26 +638,254 @@ body {
 }
 
 @media (min-width:390px) and (max-width:413px) {
-    .icon-link-keranjang {
-        margin-left: 170px;
-    }
+    
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
     .icon-link-daftarrs {
         margin-left: 60px;
     }
 }
 
 @media (min-width:430px) and (max-width:479px) {
-    .icon-link-keranjang {
-        margin-left: 200px;
-    }
+    
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
     .icon-link-daftarrs {
         margin-left: 90px;
     }
 }
 @media (min-width:480px) and (max-width:539px) {
-    .icon-link-keranjang {
-        margin-left: 250px;
-    }
+    
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
     .icon-link-daftarrs {
         margin-left: 110px;
     }
@@ -628,15 +930,85 @@ body {
         font-size: 14px;
         color: #666;
     }
-    .user-info {
-        width: 93%;
-    }
-    .username {
-        font-size: 20px;
-    }
-    .icon-link-keranjang {
-        margin-left: 300px;
-    }
+   
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
     .daftarRStext {
         font-size: 25px;
         height:25px;
@@ -734,17 +1106,85 @@ body {
         font-size: 17px;
         color: #666;
     }
-    .user-info {
-        width: 95%;
-        background: none;
-        box-shadow:none;
-    }
-    .username {
-        font-size: 23px;
-    }
-    .icon-link-keranjang {
-        margin-left: 450px;
-    }
+    
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
     .daftarRStext {
         font-size: 27px;
         height:25px;
@@ -921,21 +1361,85 @@ body {
         margin-right: 10px;
         font-size: 16px;
     }
-    .user-info {
-        background:none;
-        box-shadow: none;
-    }
-    .profile-pic {
-        width: 60px;
-        height: 60px;
-    }
-    .username {
-        margin-left: 5px;
-        font-size: 22px;
-    }
-    .icon-link-keranjang {
-        margin-left: 480px;
-    }
+    
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
     .daftarRStext {
         font-size: 27px;
         font-weight: 700;
@@ -1113,21 +1617,85 @@ body {
         margin-right: 10px;
         font-size: 16px;
     }
-    .user-info {
-        background:none;
-        box-shadow: none;
-    }
-    .profile-pic {
-        width: 60px;
-        height: 60px;
-    }
-    .username {
-        margin-left: 5px;
-        font-size: 22px;
-    }
-    .icon-link-keranjang {
-        margin-left: 500px;
-    }
+    
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
     .daftarRStext {
         font-size: 27px;
         font-weight: 700;
@@ -1339,35 +1907,83 @@ body {
         font-size: 20px;
         color: #666;
     }
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .login:hover {
+        color: #5e5e5e;
+    }
+    .signup {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .signup:hover {
+        color: #5e5e5e;
+    }
+    .section-user-keranjang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:95%;
+    }
     .user-info {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background: none;
+        background: #fff;
         padding: 15px;
         margin-top: 10px;
         border-radius: 15px;
-        box-shadow: none;
-        width:95%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+        height: auto;
     }
     .profile-pic {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         background: #ddd;
         border-radius: 50%;
     }
     .username {
         margin-left: 5px;
-        font-size: 20px;
+        font-size: 18px;
         color: #333;
         font-weight: 700;
+        text-decoration: none;
+    }
+    .username:hover {
+        color: #5e5e5e;
+    }
+    .keranjang-reminder {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
     }
     .icon-link-keranjang {
-        margin-left: 750px;
         color: #333;
     }
-    .icon-link-keranjang .material-icons {
-        font-size: 30px;
+    .icon-link-keranjang:hover {
+        color: #5e5e5e;
+    }
+    .icon-link-reminder {
+        color: #333;
+    }
+    .icon-link-reminder:hover {
+        color: #5e5e5e;
     }
     .daftar-rs {
         display: flex;
@@ -1769,42 +2385,90 @@ body {
         height: 50px;
     }
     .logo-img {
-        margin-left: 20px;
-        height:60px;
+        margin-left: 5px;
+        height:80px;
     }
     .tagline {
-        font-size: 15px;
+        font-size: 18px;
         color: #666;
+    }
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .login:hover {
+        color: #5e5e5e;
+    }
+    .signup {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .signup:hover {
+        color: #5e5e5e;
+    }
+    .section-user-keranjang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:95%;
     }
     .user-info {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background: none;
+        background: #fff;
         padding: 15px;
         margin-top: 10px;
         border-radius: 15px;
-        box-shadow: none;
-        width:95%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+        height: auto;
     }
     .profile-pic {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         background: #ddd;
         border-radius: 50%;
     }
     .username {
         margin-left: 5px;
-        font-size: 17px;
+        font-size: 18px;
         color: #333;
         font-weight: 700;
+        text-decoration: none;
+    }
+    .username:hover {
+        color: #5e5e5e;
+    }
+    .keranjang-reminder {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
     }
     .icon-link-keranjang {
-        margin-left: 1000px;
         color: #333;
     }
-    .icon-link-keranjang .material-icons {
-        font-size: 20px;
+    .icon-link-keranjang:hover {
+        color: #5e5e5e;
+    }
+    .icon-link-reminder {
+        color: #333;
+    }
+    .icon-link-reminder:hover {
+        color: #5e5e5e;
     }
     .daftar-rs {
         display: flex;
@@ -2217,35 +2881,83 @@ body {
         font-size: 20px;
         color: #666;
     }
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .login:hover {
+        color: #5e5e5e;
+    }
+    .signup {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .signup:hover {
+        color: #5e5e5e;
+    }
+    .section-user-keranjang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:95%;
+    }
     .user-info {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background: none;
+        background: #fff;
         padding: 15px;
         margin-top: 10px;
         border-radius: 15px;
-        box-shadow: none;
-        width:95%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+        height: auto;
     }
     .profile-pic {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         background: #ddd;
         border-radius: 50%;
     }
     .username {
         margin-left: 5px;
-        font-size: 20px;
+        font-size: 18px;
         color: #333;
         font-weight: 700;
+        text-decoration: none;
+    }
+    .username:hover {
+        color: #5e5e5e;
+    }
+    .keranjang-reminder {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
     }
     .icon-link-keranjang {
-        margin-left: 1050px;
         color: #333;
     }
-    .icon-link-keranjang .material-icons {
-        font-size: 28px;
+    .icon-link-keranjang:hover {
+        color: #5e5e5e;
+    }
+    .icon-link-reminder {
+        color: #333;
+    }
+    .icon-link-reminder:hover {
+        color: #5e5e5e;
     }
     .daftar-rs {
         display: flex;
@@ -2660,35 +3372,83 @@ body {
         font-size: 25px;
         color: #666;
     }
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .login:hover {
+        color: #5e5e5e;
+    }
+    .signup {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .signup:hover {
+        color: #5e5e5e;
+    }
+    .section-user-keranjang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:95%;
+    }
     .user-info {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background: none;
+        background: #fff;
         padding: 15px;
         margin-top: 10px;
         border-radius: 15px;
-        box-shadow: none;
-        width:95%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+        height: auto;
     }
     .profile-pic {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         background: #ddd;
         border-radius: 50%;
     }
     .username {
         margin-left: 5px;
-        font-size: 23px;
+        font-size: 18px;
         color: #333;
         font-weight: 700;
+        text-decoration: none;
+    }
+    .username:hover {
+        color: #5e5e5e;
+    }
+    .keranjang-reminder {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
     }
     .icon-link-keranjang {
-        margin-left: 1100px;
         color: #333;
     }
-    .icon-link-keranjang .material-icons {
-        font-size: 28px;
+    .icon-link-keranjang:hover {
+        color: #5e5e5e;
+    }
+    .icon-link-reminder {
+        color: #333;
+    }
+    .icon-link-reminder:hover {
+        color: #5e5e5e;
     }
     .daftar-rs {
         display: flex;
@@ -3103,35 +3863,83 @@ body {
         font-size: 25px;
         color: #666;
     }
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .login:hover {
+        color: #5e5e5e;
+    }
+    .signup {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .signup:hover {
+        color: #5e5e5e;
+    }
+    .section-user-keranjang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:95%;
+    }
     .user-info {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background: none;
+        background: #fff;
         padding: 15px;
         margin-top: 10px;
         border-radius: 15px;
-        box-shadow: none;
-        width:95%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+        height: auto;
     }
     .profile-pic {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         background: #ddd;
         border-radius: 50%;
     }
     .username {
         margin-left: 5px;
-        font-size: 25px;
+        font-size: 18px;
         color: #333;
         font-weight: 700;
+        text-decoration: none;
+    }
+    .username:hover {
+        color: #5e5e5e;
+    }
+    .keranjang-reminder {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
     }
     .icon-link-keranjang {
-        margin-left: 1500px;
         color: #333;
     }
-    .icon-link-keranjang .material-icons {
-        font-size: 28px;
+    .icon-link-keranjang:hover {
+        color: #5e5e5e;
+    }
+    .icon-link-reminder {
+        color: #333;
+    }
+    .icon-link-reminder:hover {
+        color: #5e5e5e;
     }
     .daftar-rs {
         display: flex;

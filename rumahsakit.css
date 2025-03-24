@@ -33,14 +33,53 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     font-weight: bold;
     height: 30px;
+    align-items: center;
 }
 .logo-img {
     height:50px;
+}
+.login-signup-logout-tagline {
+    display: flex;
+    flex-direction: column;
 }
 .tagline {
     margin-right: 5px;
     font-size: 12px;
     color: #666;
+    font-style: oblique;
+    font-weight: 700;
+}
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
 }
 .user-info {
     display: flex;
@@ -51,7 +90,8 @@ body {
     margin-top: 10px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width:90%;
+    width:auto;
+    height: auto;
 }
 .profile-pic {
     width: 50px;
@@ -64,10 +104,28 @@ body {
     font-size: 18px;
     color: #333;
     font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
 .icon-link-keranjang {
-    margin-left: 190px;
     color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
 }
 .daftarRStext {
     color: #333;
@@ -236,49 +294,102 @@ body {
     .tagline {
         font-size: 10px;
     }
-    .username {
+    .login-signup-logout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .login {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
         font-size: 15px;
     }
+    .login:hover {
+        color: #5e5e5e;
+    }
+    .signup {
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .signup:hover {
+        color: #5e5e5e;
+    }
+    .section-user-keranjang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:95%;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+        height: auto;
+    }
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    .username {
+        margin-left: 5px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .username:hover {
+        color: #5e5e5e;
+    }
+    .keranjang-reminder {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
     .icon-link-keranjang {
-        margin-left: 130px;
         color: #333;
     }
-    .icon-link-keranjang .material-icons{
-        font-size: 20px;
+    .icon-link-keranjang:hover {
+        color: #5e5e5e;
+    }
+    .icon-link-reminder {
+        color: #333;
+    }
+    .icon-link-reminder:hover {
+        color: #5e5e5e;
     }
 }
 @media (min-width:390px) and (max-width:413px) {
-    .icon-link-keranjang {
-        margin-left: 170px;
-    }
 }
 @media (min-width:480px) and (max-width:539px) {
-    .icon-link-keranjang {
-        margin-left: 250px;
-    }
 }
 @media (min-width:540px) and (max-width:711px) {
     .tagline {
         font-size: 14px;
-    }
-    .icon-link-keranjang {
-        margin-left: 300px;
     }
 }
 @media (min-width:712px) and (max-width:767px) {
     .tagline {
         font-size: 15px;
     }
-    .icon-link-keranjang {
-        margin-left: 450px;
-    }
 }
 @media (min-width:768px) and (max-width:819px) {
     .tagline {
         font-size: 15px;
-    }
-    .icon-link-keranjang {
-        margin-left: 500px;
     }
     .input {
         width: 25em;
@@ -287,9 +398,6 @@ body {
 @media (min-width:820px) and (max-width:1023px) {
     .tagline {
         font-size: 17px;
-    }
-    .icon-link-keranjang {
-        margin-left: 500px;
     }
     .input {
         width: 25em;
@@ -365,10 +473,6 @@ body {
         font-size: 18px;
         color: #333;
         font-weight: 700;
-    }
-    .icon-link-keranjang {
-        margin-left: 720px;
-        color: #333;
     }
     .daftarRStext {
         color: #333;
@@ -537,10 +641,6 @@ body {
         color: #333;
         font-weight: 700;
     }
-    .icon-link-keranjang {
-        margin-left: 930px;
-        color: #333;
-    }
     .daftarRStext {
         color: #333;
         font-size: 24px;
@@ -707,10 +807,6 @@ body {
         font-size: 18px;
         color: #333;
         font-weight: 700;
-    }
-    .icon-link-keranjang {
-        margin-left: 1030px;
-        color: #333;
     }
     .daftarRStext {
         color: #333;
@@ -879,10 +975,6 @@ body {
         color: #333;
         font-weight: 700;
     }
-    .icon-link-keranjang {
-        margin-left: 1090px;
-        color: #333;
-    }
     .daftarRStext {
         color: #333;
         font-size: 24px;
@@ -1049,10 +1141,6 @@ body {
         font-size: 18px;
         color: #333;
         font-weight: 700;
-    }
-    .icon-link-keranjang {
-        margin-left: 1490px;
-        color: #333;
     }
     .daftarRStext {
         color: #333;
