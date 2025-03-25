@@ -19,8 +19,8 @@
         <div class="login-signup-logout-tagline">
             <p class="tagline">Healthcare Solution Terbaik untuk Anda</p>
             <div class="login-signup-logout">
-                <a href="login.html" class="login">LogIn</a>
-                <a href="signup.html" class="signup">SignUp</a>
+                <a class="login" id="loginBtn">Log In</a>
+                <a class="signup" id="signupBtn" href="signup.html">Sign Up</a>
             </div>
         </div>
     </div>
@@ -144,6 +144,30 @@
         <a class="link" href="bankes.html">Lihat Selengkapnya</a>
         </div>
     </div>
+    
+    <div class="form-wrapper" id="formWrapper">
+    <form class="form" id="loginForm">
+        <button type="button" class="close-btn" id="closeBtn">&times;</button>
+        <p class="form-title">Log in to your account</p>
+         <div class="input-container">
+           <input type="email" placeholder="Enter email">
+           <span>
+           </span>
+       </div>
+       <div class="input-container">
+           <input type="password" placeholder="Enter password">
+         </div>
+          <button type="submit" class="submit">
+         Log in
+       </button>
+ 
+       <p class="signup-link">
+         No account?
+         <a href="index.html">Sign up</a>
+       </p>
+    </form>
+    </div>
+ 
 
     <div class="footer">
         <div class="mediasosial">
@@ -165,8 +189,8 @@
             <div class="login-signup-logout-tagline">
                 <p class="tagline">Healthcare Solution Terbaik untuk Anda</p>
                 <div class="login-signup-logout">
-                    <a href="login.html" class="login">LogIn</a>
-                    <a href="signup.html" class="signup">SignUp</a>
+                    <a class="login" id="loginBtnDesktop">Log In</a>
+                    <a class="signup" id="signupBtn" href="signup.html">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -180,8 +204,8 @@
                 <span class="material-icons">local_mall</span>
                 </a>
                 <a href="purchase.html" class="icon-link-reminder">
-                    <span class="material-icons">pending_actions</span>
-                    </a>
+                <span class="material-icons">pending_actions</span>
+                </a>
             </div>
         </div>
         <div class="daftar-rs">
@@ -306,6 +330,38 @@
             <a class="link" href="bankes.html">Lihat Selengkapnya</a>
             </div>
         </div>
+
+        <div class="layananbantuanbiaya">
+        <img src="img/IMG_1878.jpeg" class="layananbantuanbiayaimg">
+        <div class="juduldanlink">
+        <h1 class="judul">Layanan Bantuan Biaya Kesehatan</h1>
+        <a class="link" href="bankes.html">Lihat Selengkapnya</a>
+        </div>
+    </div>
+    
+    <div class="form-wrapper-desktop" id="formWrapper-desktop">
+        <form class="form-login-desktop">
+            <button type="button" class="close-btn" id="closeForm">&times;</button>
+            <p class="form-title">Log in to your account</p>
+            <div class="input-container">
+                <input type="email" placeholder="Enter email">
+                <span>
+                </span>
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Enter password">
+              </div>
+               <button type="submit" class="submit">
+              Log in
+            </button>
+      
+            <p class="signup-link">
+              No account?
+              <a href="signup.html">Sign up</a>
+            </p>
+         </form>
+         </div>
+    
     
         <div class="footer">
             <div class="mediasosial">
@@ -319,7 +375,7 @@
     </div>
     </div>
 <!-- DESKTOP-CONTENT-END -->
-
+<script src="index.js"></script>
 </body>
 </html>
 
