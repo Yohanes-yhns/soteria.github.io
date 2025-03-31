@@ -306,8 +306,8 @@ body {
 
 .popup-img {
     margin-top: 30px;
-    width: 80%;
-    height: auto;
+    max-width: 70%;
+    max-height: auto;
     margin-bottom: 20px;
 }
 
