@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     // Ambil semua tombol tambah dan kurang
     const minusButtons = document.querySelectorAll(".quantity-btn:first-child");
     const plusButtons = document.querySelectorAll(".quantity-btn:last-child");
@@ -162,6 +163,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "index.html"; // Ubah ke halaman keranjang pesanan
     });
 
+    const popupBenefit = document.getElementById("popup-benefit");
+    const closeConfirmationBenefit = document.getElementById("close-detail-benefit");
+
+    if (popupBenefit && closeConfirmationBenefit) {
+        closeConfirmationBenefit.addEventListener("click", function () {
+            popupBenefit.style.display = "none";
+        });
+    } else {
+        console.error("Popup atau tombol close tidak ditemukan di DOM.");
+    }
     
 });
     

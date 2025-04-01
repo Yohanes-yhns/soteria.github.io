@@ -161,7 +161,16 @@ document.addEventListener("DOMContentLoaded", function () {
     viewCartButton.addEventListener("click", function () {
         window.location.href = "index.html"; // Ubah ke halaman keranjang pesanan
     });
+    const popupBenefit = document.getElementById("popup-benefit");
+    const closeConfirmationBenefit = document.getElementById("close-detail-benefit");
 
+    if (popupBenefit && closeConfirmationBenefit) {
+        closeConfirmationBenefit.addEventListener("click", function () {
+            popupBenefit.style.display = "none";
+        });
+    } else {
+        console.error("Popup atau tombol close tidak ditemukan di DOM.");
+    }
     
 });
     

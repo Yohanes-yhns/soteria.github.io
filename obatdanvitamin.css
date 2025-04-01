@@ -9,12 +9,6 @@ body {
     min-height:100vh;
     overflow-x: hidden;
 }
-.mobile-content {
-    display:block;
-}
-.desktop-content {
-    display: none;
-}
 .container {
     width: 100%;
     min-height: auto;
@@ -36,7 +30,7 @@ body {
     align-items: center;
 }
 .logo-img {
-    height:50px;
+    height:60px;
 }
 .login-signup-logout-tagline {
     display: flex;
@@ -80,6 +74,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width:95%;
+    margin-bottom: 10px;
 }
 .user-info {
     display: flex;
@@ -264,7 +259,7 @@ body {
 }
 
 .product-name {
-    font-size: 17px;
+    font-size: 15px;
     color: #333;
     margin: 10px 0;
 }
@@ -280,13 +275,15 @@ body {
     background-color: #333;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 5px 5px;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .quantity-input {
-    width: 50px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
     text-align: center;
     border: 1px solid #ddd;
     margin: 0 10px;
@@ -311,58 +308,180 @@ body {
 .buy-btn:hover {
     background-color: #218838;
 }
-/* Style untuk popup */
+/* === Styling untuk Popup === */
 .popup {
-    display: none;
-    position: fixed; 
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Default tersembunyi */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Efek transparan */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* === Konten Popup === */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    max-height:80vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* === Tombol Close (X) === */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #666;
+}
+
+/* === Gambar Produk di Popup === */
+#popup-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.popup-content #form-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* === Nama Produk === */
+#popup-name,
+#form-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#popup-price,
+#form-price {
+    font-size: 16px;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* === Input Fields === */
+.popup-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.popup-content select {
+    width: 50%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* === Tombol Konfirmasi & Pesan Sekarang === */
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.popup-benefit {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Efek transparan */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* === Konten Popup === */
+.popup-content-benefit {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    max-height: 80vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.popup-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    width: 80%;
-    height: auto;
+/* === Tombol Close (X) === */
+.close-btn-benefit {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    z-index: 1000;
 }
 
-.popup img {
-    width: 150px;
-    height: auto;
+.close-btn-benefit:hover {
+    color: #666;
 }
-.popup .popup-content p {
-    font-size: 18px;
-    color: #333;
+
+.popup-img-benefit {
+    margin-top: 30px;
+    max-width: 70%;
+    max-height: auto;
+    margin-bottom: 20px;
+}
+
+.link-benefit {
+    font-size: 16px;
+    margin-top: 40px;
+    color:#333;
     font-weight: 600;
 }
 
-.close-btn {
-    align-self: flex-end;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+.link-benefit:hover {
+    color: #5e5e5e;
 }
-.close-btn:hover {
-    color: #333;
-}
-#confirm-btn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
+
 .footer {
     width: 100%;
     display: flex;
@@ -389,7 +508,101 @@ body {
     color: #333;
     font-weight: 500;
 }
-@media screen and (min-width: 320px) {
+@media (min-width:320px) and (max-width:374px) {
+.tagline {
+    font-size: 10px;
+}
+.login-signup-logout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.login {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login:hover {
+    color: #5e5e5e;
+}
+.signup {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signup:hover {
+    color: #5e5e5e;
+}
+.section-user-keranjang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width:auto;
+    height: auto;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.username {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.username:hover {
+    color: #5e5e5e;
+}
+.keranjang-reminder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.icon-link-keranjang {
+    color: #333;
+}
+.icon-link-keranjang:hover {
+    color: #5e5e5e;
+}
+.icon-link-reminder {
+    color: #333;
+}
+.icon-link-reminder:hover {
+    color: #5e5e5e;
+}
+.popup-content {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+}
+#form-image {
+    display: none;
+}
+#form-name {
+    font-size: 20px;
+}
+}
+@media screen and (min-width: 375px) {
     .tagline {
         font-size: 10px;
     }
@@ -471,7 +684,20 @@ body {
     .icon-link-reminder:hover {
         color: #5e5e5e;
     }
+    .popup-content {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+    #form-image {
+        width: 150px;
+        height: 150px;
+    }
+    #form-name {
+        font-size: 20px;
+    }
 }
+
 @media screen and (min-width: 712px) {
     .products {
         width: 95%;
@@ -545,29 +771,10 @@ body {
 }
 @media screen and (min-width: 1024px) {
     .navbar {
-        width: 100%;
-        display: flex;
-        padding: 20px;
-        justify-content: space-between;
-        background-color: #fff;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        font-weight: bold;
-        height: 30px;
-        align-items: center;
+        height: 50px;
     }
     .logo-img {
-        height:50px;
-    }
-    .login-signup-logout-tagline {
-        display: flex;
-        flex-direction: column;
-    }
-    .tagline {
-        margin-right: 5px;
-        font-size: 12px;
-        color: #666;
-        font-style: oblique;
-        font-weight: 700;
+        height: 70px;
     }
     .login-signup-logout {
         display: flex;
@@ -655,5 +862,8 @@ body {
     }
     .footer .mediasosial img {
         width: 40px;
+    }
+    .quantity-btn {
+        width: 30px;
     }
 }

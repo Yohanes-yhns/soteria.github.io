@@ -9,12 +9,6 @@ body {
     min-height:100vh;
     overflow-x: hidden;
 }
-.mobile-content {
-    display:block;
-}
-.desktop-content {
-    display: none;
-}
 .container {
     width: 100%;
     min-height: auto;
@@ -422,6 +416,69 @@ button {
 
 button:hover {
     background-color: #4cae4c;
+}
+.popup-benefit {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Efek transparan */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* === Konten Popup === */
+.popup-content-benefit {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    max-height: 80vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Tombol Close (X) === */
+.close-btn-benefit {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    z-index: 1000;
+}
+
+.close-btn-benefit:hover {
+    color: #666;
+}
+
+.popup-img-benefit {
+    margin-top: 30px;
+    max-width: 70%;
+    max-height: auto;
+    margin-bottom: 20px;
+}
+
+.link-benefit {
+    font-size: 16px;
+    margin-top: 40px;
+    color:#333;
+    font-weight: 600;
+}
+
+.link-benefit:hover {
+    color: #5e5e5e;
 }
 
 .footer {
